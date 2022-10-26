@@ -32,26 +32,12 @@ require('inc/yoast-meta-description.php');
 require('inc/cta-post-type.php');
 
 
-/**
-*** Scripts FPS Function
-**/
 if (function_exists('acf_add_options_page')) {
-    // parent.
 	acf_add_options_page(array(
-		'page_title'  => __('FPS Scripts'),
-		'menu_title'  => __('FPS Scripts'),
+		'page_title'  => __('Theme Options'),
+		'menu_title'  => __('Theme Options'),
 		'redirect'    => false,
 	));
-
-    acf_add_options_page(array(
-		'page_title'  => __('FPS Options'),
-		'menu_title'  => __('FPS Options'),
-		'redirect'    => false,
-	));
-
-    /** Tab FPS Options **/
-    require('inc/functions/fps-tab-scripts/add-action-init.php');
-    require('inc/functions/fps-tab-scripts/fields-imported.php');
 }
 
 /** ACF Custom functions **/
