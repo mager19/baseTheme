@@ -1,0 +1,316 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../css/fonts/icons/icomoon.eot?5ijpi9');
+  src:  url('../css/fonts/icons/icomoon.eot?5ijpi9#iefix') format('embedded-opentype'),
+    url('../css/fonts/icons/icomoon.ttf?5ijpi9') format('truetype'),
+    url('../css/fonts/icons/icomoon.woff?5ijpi9') format('woff'),
+    url('../css/fonts/icons/icomoon.svg?5ijpi9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube--d:before {
+  content: "\e906";
+}
+.icon-yelp--d:before {
+  content: "\e90e";
+}
+.icon-twitter--d:before {
+  content: "\e915";
+}
+.icon-linkedin--d:before {
+  content: "\e91f";
+}
+.icon-instagram--d:before {
+  content: "\e936";
+}
+.icon-google-plus--d:before {
+  content: "\e939";
+}
+.icon-facebook--d:before {
+  content: "\e94a";
+}
+
+.fs1{
+    @apply col-span-3 py-4;
+
+        [class^="icon-"], [class*=" icon-"]{
+            font-size: 64px;
+        }
+
+}
+
+/*--------------------------------------------------------------
+    Social Icons - Style
+--------------------------------------------------------------*/
+
+    .social-icons {
+        justify-content: flex-start;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0px;
+            margin-left: 0 !important;
+            width: 100%;
+
+            @screen lg {
+                justify-content: center;
+            }
+
+            li {
+                display: flex;
+                margin-bottom: 0;
+                width: 30px;
+                padding-left: 0 !important;
+
+                &:before {
+                    display: none;
+                }
+
+                @screen lg {
+                    width: 25px;
+                }
+            }
+        }
+        a {
+            transition: all 300ms ease-out;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: black;
+            }
+            &:hover{
+                i{
+                    color: red;
+                }
+            }
+        }
+    }
+
+
+
+
+/*--------------------------------------------------------------
+    List Social Icons
+--------------------------------------------------------------*/
+
+.icon-instagram_icon-12:before {
+  content: "\e918";
+}
+.icon-pinterest_icon-2:before {
+  content: "\e91a";
+}
+.icon-pinterest_icon-3:before {
+  content: "\e91c";
+}
+.icon-pinterest_icon-1:before {
+  content: "\e91d";
+}
+.icon-pinterest_icon-4:before {
+  content: "\e91e";
+}
+.icon-pinterest_icon:before {
+  content: "\e920";
+}
+.icon-rss_icon:before {
+  content: "\e902";
+}
+.icon-rss_icon-2:before {
+  content: "\e903";
+}
+.icon-rss_icon-1:before {
+  content: "\e911";
+}
+.icon-rss_icon-3:before {
+  content: "\e912";
+}
+.icon-youtube_icon-1:before {
+  content: "\e900";
+}
+.icon-youtube_icon-2:before {
+  content: "\e901";
+}
+.icon-youtube_icon-4:before {
+  content: "\e904";
+}
+.icon-youtube_icon-5:before {
+  content: "\e905";
+}
+.icon-youtube_icon:before {
+  content: "\e906";
+}
+.icon-youtube_icon-6:before {
+  content: "\e907";
+}
+.icon-youtube_icon-7:before {
+  content: "\e908";
+}
+.icon-youtube_icon-8:before {
+  content: "\e909";
+}
+.icon-youtube_icon-9:before {
+  content: "\e90a";
+}
+.icon-youtube_icon-10:before {
+  content: "\e90b";
+}
+.icon-yelp_icon-1:before {
+  content: "\e90c";
+}
+.icon-yelp_icon-2:before {
+  content: "\e90d";
+}
+.icon-yelp_icon:before {
+  content: "\e90e";
+}
+.icon-twitter_icon-2:before {
+  content: "\e90f";
+}
+.icon-twitter_icon-3:before {
+  content: "\e910";
+}
+.icon-twitter_icon:before {
+  content: "\e913";
+}
+.icon-twitter_icon-1:before {
+  content: "\e914";
+}
+.icon-twitter_icon-4:before {
+  content: "\e915";
+}
+.icon-twitter_icon-5:before {
+  content: "\e916";
+}
+.icon-twitter_icon-6:before {
+  content: "\e917";
+}
+.icon-linkedin_icon-4:before {
+  content: "\e919";
+}
+.icon-linkedin_icon-12:before {
+  content: "\e91b";
+}
+.icon-linkedin_icon-2:before {
+  content: "\e91f";
+}
+.icon-linkedin_icon-7:before {
+  content: "\e923";
+}
+.icon-linkedin_icon-8:before {
+  content: "\e924";
+}
+.icon-linkedin_icon-9:before {
+  content: "\e925";
+}
+.icon-linkedin_icon-10:before {
+  content: "\e926";
+}
+.icon-linkedin_icon-11:before {
+  content: "\e927";
+}
+.icon-linkedin_icon-13:before {
+  content: "\e928";
+}
+.icon-instagram_icon-2:before {
+  content: "\e929";
+}
+.icon-instagram_icon-3:before {
+  content: "\e92a";
+}
+.icon-instagram_icon-4:before {
+  content: "\e92b";
+}
+.icon-instagram_icon-6:before {
+  content: "\e930";
+}
+.icon-instagram_icon-7:before {
+  content: "\e931";
+}
+.icon-instagram_icon-8:before {
+  content: "\e932";
+}
+.icon-instagram_icon-9:before {
+  content: "\e933";
+}
+.icon-instagram_icon:before {
+  content: "\e934";
+}
+.icon-instagram_icon-1:before {
+  content: "\e935";
+}
+.icon-instagram_icon-10:before {
+  content: "\e936";
+}
+.icon-instagram_icon-11:before {
+  content: "\e937";
+}
+.icon-google-plus_icon-1:before {
+  content: "\e938";
+}
+.icon-google-plus_icon-4:before {
+  content: "\e939";
+}
+.icon-google-plus_icon-5:before {
+  content: "\e93a";
+}
+.icon-google-plus_icon-6:before {
+  content: "\e93b";
+}
+.icon-google-plus_icon:before {
+  content: "\e93d";
+}
+.icon-google-plus_icon-2:before {
+  content: "\e93e";
+}
+.icon-google-plus_icon-3:before {
+  content: "\e93f";
+}
+.icon-google-plus_icon-8:before {
+  content: "\e940";
+}
+.icon-facebook_icon-2:before {
+  content: "\e941";
+}
+.icon-facebook_icon-3:before {
+  content: "\e942";
+}
+.icon-facebook_icon-4:before {
+  content: "\e943";
+}
+.icon-facebook_icon-5:before {
+  content: "\e944";
+}
+.icon-facebook_icon-7:before {
+  content: "\e947";
+}
+.icon-facebook_icon-8:before {
+  content: "\e948";
+}
+.icon-facebook_icon-9:before {
+  content: "\e949";
+}
+.icon-facebook_icon-10:before {
+  content: "\e94a";
+}
+.icon-facebook_icon-11:before {
+  content: "\e94b";
+}

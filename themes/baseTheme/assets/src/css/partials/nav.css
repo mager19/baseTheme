@@ -1,0 +1,17 @@
+.site__nav {
+    ul {
+        @apply flex justify-end items-center mb-0;
+
+        li {
+            @apply mb-0 list-none;
+
+            &:not(:first-child) {
+                @apply ml-8;
+            }
+
+            a {
+                @apply text-dark-1 hover:text-dark-3 font-semibold hover:underline hover:decoration-primary;
+            }
+        }
+    }
+}

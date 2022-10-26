@@ -1,0 +1,16 @@
+.footer-menu {
+    @apply text-center lg:text-right;
+
+    ul {
+        @apply ml-0;
+        li {
+            @apply list-none lg:inline-block;
+
+            &:not(:first-child) {
+                @screen lg {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
