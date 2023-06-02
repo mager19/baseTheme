@@ -48,7 +48,7 @@ $curauth = $wp_query->get_queried_object();
                                 $social = get_sub_field('social_icon');
                         ?>
                                 <a href="<?php the_sub_field('social_profile'); ?>" target="_blank" data-link-type="social" data-social-network="<?php echo $social['value']; ?>">
-                                    <span class="fpsIcon-<?php echo $social['value']; ?>"></span>
+                                    <span class="baseThemeIcon-<?php echo $social['value']; ?>"></span>
                                 </a>
                         <?php endwhile;
                         endif; ?>

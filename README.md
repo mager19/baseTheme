@@ -1,3 +1,7 @@
+# June 2 - 2023
+
+-   Update Packages
+
 # September 20 - 2022
 
 -   Update Plugins
@@ -26,7 +30,7 @@ Mode of use:
 
 3. Once step 2 has been done, we copy the function where it is necessary
 
-<?php fps_get_social_icons(); ?>
+<?php baseTheme_get_social_icons(); ?>
 
 If the icons to use are not in the default icons that brings the pack we will have to generate again the source for the icons and for this we will do it in the following way:
 
@@ -46,7 +50,7 @@ If the icons to use are not in the default icons that brings the pack we will ha
 
 10. Once step 9 has been done, we copy the function where it is necessary
 
-<?php fps_get_social_icons(); ?>
+<?php baseTheme_get_social_icons(); ?>
 
 # February 11 - 2022
 
@@ -168,11 +172,11 @@ Note: important use script npm run prod when finished project or the update task
 
 ### 9 December
 
-#### FPS Sticky Menu
+#### baseTheme Sticky Menu
 
 -   Update Plugin V.1.6.21
 -   Removing script footer modal menu (Deprecated)
--   Adding a function inside fpsbase.js file for opening menu
+-   Adding a function inside baseThemebase.js file for opening menu
 -   Adding Style base
 -   Adding icon hamburger span
 
@@ -314,7 +318,7 @@ Method used for Sass: https://github.com/google/material-design-icons/issues/150
 This Framework is being development to get more useful and faster the develop of a new theme from Front Porch Solutions Company. The idea is the developer use it like base in each development of a site, it has functions, code, fields most used in a basic development but it will be the tool to start with your site. You'll find here:
 
 -   A just right amount of lean, well-commented, templates.
--   The main templates or pages with the basic fields we use in FPS
+-   The main templates or pages with the basic fields we use in baseTheme
 
 # Getting Started
 
@@ -337,9 +341,9 @@ This Base theme Plugins used are next:
 
 It helps us to automate so that every time we make a change in our scss we update the style.css and we refresh the browser.
 
-1- Go to /themes/Fpsbase
+1- Go to /themes/baseThemebase
 
-2- Open console in the fpsbase directory, and type:
+2- Open console in the baseThemebase directory, and type:
 
 npm install
 
@@ -367,7 +371,7 @@ npm install
 -   Newsletter Form
 
 Are ready to use, only you should add content.
-To get these fields it's necessary to import `.JSON` located in https://bitbucket.org/fps-dev/fpsframework/downloads/ . When you imported this file you will find the 'options' tab ready. The fields ready to use are:
+To get these fields it's necessary to import `.JSON` located in https://bitbucket.org/baseTheme-dev/baseThemeframework/downloads/ . When you imported this file you will find the 'options' tab ready. The fields ready to use are:
 
 ##### GTM (Google Tag Manager)
 
@@ -462,8 +466,8 @@ These elements are located in `js` folder `.js` with all executed.
 
 We defined two menus:
 
-        'menu-1' => esc_html__( 'Header', 'FPSBase' ),
-        'menu-2' => esc_html__( 'Footer', 'FPSBase' ),)
+        'menu-1' => esc_html__( 'Header', 'baseThemeBase' ),
+        'menu-2' => esc_html__( 'Footer', 'baseThemeBase' ),)
 
 ---
 
@@ -548,7 +552,7 @@ There are two kind of Fonts Variable defined. You can create the extras you want
 
 ### #Where import the Fonts?
 
-Go to functions.php and about 65 line, exactly in `FPSBase_scripts` functions replace:
+Go to functions.php and about 65 line, exactly in `baseThemeBase_scripts` functions replace:
 
     wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500,700');
 
@@ -731,7 +735,7 @@ To Learn more: http://getbootstrap.com/docs/4.3/utilities/spacing/
 
 ---
 
-## Tools Most Used in FPS that you can find in Bootstrap 4.3.1
+## Tools Most Used in baseTheme that you can find in Bootstrap 4.3.1
 
 There are many elements from Bootstrap that we can use and it won�t be necessary to create new code lines. Here, there�s a list of most used:
 

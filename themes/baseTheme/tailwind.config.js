@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
     content: ["./*.php", "./*/*.php", "./assets/**/*.js"],
@@ -19,132 +19,181 @@ module.exports = {
                 primary: {
                     DEFAULT: "#E86969",
                     hover: "#D65959",
-                    lighter: "#F19898"
+                    lighter: "#F19898",
                 },
                 secondary: {
                     DEFAULT: "#111F4D",
                     hover: "#374678",
-                    lighter: "#071133"
+                    lighter: "#071133",
                 },
                 black: "#000",
                 white: "#fff",
             },
 
-            fontFamily: { 
-                inter: "Inter"
-            },
             spacing: {
-                '13': '3.25rem',
-                '15': '3.75rem',
-                '128': '32rem',
-                '144': '36rem',
-            }, 
+                13: "3.25rem",
+                15: "3.75rem",
+                128: "32rem",
+                144: "36rem",
+            },
             container: {
                 center: true,
-            },           
+            },
+        },
+        fontFamily: {
+            inter: "Inter",
+        },
+        fontSize: {
+            display1: [
+                "6rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "600",
+                    lineHeight: "6.375rem",
+                },
+            ],
+            h1: [
+                "4rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "600",
+                    lineHeight: "4.375rem",
+                },
+            ],
+            h2: [
+                "3rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "600",
+                    lineHeight: "3.25rem",
+                },
+            ],
+            h3: [
+                "2.25rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "2.6875rem",
+                },
+            ],
+            h4: [
+                "2rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "2.625rem",
+                },
+            ],
+            titleL: [
+                "1.5rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "2rem",
+                },
+            ],
+            titleM: [
+                "1.125rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.25rem",
+                },
+            ],
+            titleS: [
+                "1rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.25rem",
+                },
+            ],
+            bodyL: [
+                "1.125rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "400",
+                    letterSpacing: "-0.011em",
+                    lineHeight: "1.5rem",
+                },
+            ],
+            bodyM: [
+                "1rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "400",
+                    lineHeight: "1.625rem",
+                },
+            ],
+            bodyM_bold: [
+                "1rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.625rem",
+                },
+            ],
+            bodyM_italic: [
+                "1rem",
+                {
+                    fontStyle: "italic",
+                    fontFamily: "inter",
+                    fontWeight: "400",
+                    lineHeight: "1.625rem",
+                },
+            ],
+            bodyS: [
+                "0.875rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "400",
+                    lineHeight: "1.625rem",
+                },
+            ],
+            bodyXs: [
+                "0.75rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "400",
+                    lineHeight: "1.25rem",
+                },
+            ],
+            overline: [
+                "1.5rem",
+                {
+                    fontFamily: "Karbon",
+                    fontWeight: "700",
+                    lineHeight: "1.5rem",
+                },
+            ],
+            overlineS: [
+                "0.875rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.3125rem",
+                },
+            ],
+            navigation: [
+                "1rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.625rem",
+                },
+            ],
+            button: [
+                "1rem",
+                {
+                    fontFamily: "inter",
+                    fontWeight: "700",
+                    lineHeight: "1.1875rem",
+                },
+            ],
         },
     },
     plugins: [
-        require('@tailwindcss/typography'),
-        require('@tailwindcss/line-clamp'),
-        plugin(function ({ addUtilities }) {
-          addUtilities(
-            {
-              '.title--display1': {
-                fontWeight: 700,
-                fontSize: '6rem',//96px
-                lineHeight: '8.375rem',//134px
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase'
-              },
-              '.title--display2': {
-                fontWeight: 700,
-                fontSize: '4.5rem',//72px
-                lineHeight: '6.5rem',//104px
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase'
-              },
-              '.title--1': {
-                fontWeight: 700,
-                fontSize: '4rem',//64px
-                lineHeight: '5.75rem',//92px
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase'
-              },
-              '.title--2': {
-                fontWeight: 700,
-                fontSize: '3rem',//48px
-                lineHeight: '4.313rem',//69px
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase'
-              },
-              '.title--3': {
-                fontWeight: 700,
-                fontSize: '2.25rem',//36px
-                lineHeight: '3.25rem',//52px
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase'
-              },
-              '.title--4': {
-                fontWeight: 700,
-                fontSize: '1.5rem',//24px
-                lineHeight: '2.188rem',//35px
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              },
-              '.title--5': {
-                fontWeight: 700,
-                fontSize: '1.125rem',//18px
-                lineHeight: '1.625rem',//26px
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              },
-              '.title--6': {
-                fontWeight: 700,
-                fontSize: '1rem',//16px
-                lineHeight: '1.438rem',//23px
-                letterSpacing: '0.01em',
-                textTransform: 'uppercase'
-              },
-              '.title--lead': {
-                fontWeight: 400,
-                fontSize: '1.125rem',//18px
-                lineHeight: '1.938rem'//31px
-              },
-              '.title--body': {
-                fontWeight: 400,
-                fontSize: '1rem',
-                lineHeight: '1.688rem'//27px
-              },
-              '.title--button': {
-                fontWeight: 400,
-                fontSize: '0.75rem',//12px
-                lineHeight: '1rem',
-                letterSpacing: '0.01em',
-                textTransform: 'uppercase'
-              },
-              '.title--overline': {
-                fontWeight: 700,
-                fontSize: '1.125rem',//18px
-                lineHeight: '1.875rem',//30px
-                letterSpacing: '0.01em',
-                textTransform: 'uppercase'
-              },
-              '.title--caption': {
-                fontWeight: 700,
-                fontSize: '0.75rem',//12px
-                lineHeight: '1.25rem',//20px
-                letterSpacing: '0.4px',
-              },
-              // Extend in sass project WordPress
-              '.backgroundSettings': {
-                backgroundPosition: 'center center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-              },
-            }
-          )
-        }),
+        require("@tailwindcss/typography"),
         function ({ addComponents }) {
             addComponents({
                 ".container": {

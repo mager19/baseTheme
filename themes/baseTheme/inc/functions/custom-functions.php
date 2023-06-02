@@ -1,6 +1,6 @@
 <?php
 // Get Image
-function fps_get_Image($image)
+function baseTheme_get_Image($image)
 {
     if ($image) {
         $img_url = $image['url'];
@@ -74,7 +74,7 @@ if (function_exists('acf_add_local_field_group')) :
                 array(
                     'param' => 'options_page',
                     'operator' => '==',
-                    'value' => 'acf-options-fps-options',
+                    'value' => 'acf-options-baseTheme-options',
                 ),
             ),
         ),
